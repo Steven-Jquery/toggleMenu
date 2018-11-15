@@ -35,9 +35,12 @@
 					@include flexbox;
 					@include align-items(center);
 					@include justify-content(space-between);
-					border-bottom: 1px solid rgba($color-black, 0.5);
-					padding: 15px 0;
+					border-bottom: 1px solid rgba($color-orange, 0.8);
+					padding: 14px 0;
+					background-color: rgba($color-orange, 0.2);
 					a{
+						font-size: 20px;
+						padding: 0 10px;
 						&:after{
 							display: none;
 						}
@@ -65,10 +68,10 @@
 		height: 100%;
 		z-index: 10;
 		top: 0;
-		left: 100%;
+		left: -100%;
 		overflow-x: hidden;
 		@include transition(all 0.5s);
-		@include box-shadow(0, 3px, 10px, rgba($color-black, 0.5));
+		@include box-shadow(0 3px 10px #4d4d4d);
 		&.open{
 			left: 0;
 		} 
